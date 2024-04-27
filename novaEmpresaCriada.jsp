@@ -1,10 +1,5 @@
-<%
-	//scriptlet
-	String nomeEmpresa = (String) request.getAttribute("empresa");
-%>
-
 <html>
-<body>
-<p>Empresa <%=nomeEmpresa%> cadastrada com sucesso!</p>
-</body>
+	<body>
+		<p>Empresa ${ empresa } cadastrada com sucesso!</p>
+	</body>
 </html>
