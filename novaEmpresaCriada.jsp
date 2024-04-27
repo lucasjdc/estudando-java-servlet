@@ -1,5 +1,6 @@
 <%
-	String nomeEmpresa = "Meteoro";
+	//scriptlet
+	String nomeEmpresa = (String) request.getAttribute("empresa");
 %>
 
 <html>
