@@ -18,7 +18,13 @@ public class NovaEmpresaServlet extends HttpServlet {
 		// Definindo a codificação a ser usada para interpretar os parâmetros
 	    request.setCharacterEncoding("UTF-8");
 		
-		String nomeEmpresa = request.getParameter("nome");		
+		String nomeEmpresa = request.getParameter("nome");
+		Empresa empresa = new Empresa();
+		empresa.setNome(nomeEmpresa);
+		
+		Banco banco = new Banco();
+		banco.adiciona(empresa);
+		
 		PrintWriter out = response.getWriter();
 		out.println("<html><body>Empresa " + nomeEmpresa + " cadastrada com sucesso!</body></html>");
 	}
