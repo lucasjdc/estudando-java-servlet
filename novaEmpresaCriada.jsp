@@ -1,10 +1,9 @@
 <%
-	String nomeEmpresa = "Alura";
-	System.out.println(nomeEmpresa);
+	String nomeEmpresa = "Meteoro";
 %>
 
 <html>
 <body>
-Empresa <%=nomeEmpresa %> cadastrada com sucesso!
+<p>Empresa <%=nomeEmpresa%> cadastrada com sucesso!</p>
 </body>
 </html>
