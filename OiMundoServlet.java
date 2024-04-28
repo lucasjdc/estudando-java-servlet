@@ -9,15 +9,14 @@ import javax.servlet.http.HttpServletResponse;
 
 @WebServlet(urlPatterns="/oi")
 public class OiMundoServlet extends HttpServlet {
+	
 	@Override
-	protected void service(HttpServletRequest req,  HttpServletResponse resp) throws IOException {
+	protected void service(HttpServletRequest req, HttpServletResponse resp) throws IOException {
 		PrintWriter out = resp.getWriter();
 		out.println("<html>");
 		out.println("<body>");
-		out.println("<p>oi mundo, parabens você escreveu o primeiro servlets.</p>");
+		out.println("<p>oi mundo, parabens você escreveu o primeiro  servlets.</p>");
 		out.println("</body>");
 		out.println("</html>");
-		
-		System.out.println("o servlete OiMundoServlet foi chamado");
 	}
 }
